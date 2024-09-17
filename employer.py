@@ -1,4 +1,4 @@
-#Завдання 2
+#Завдання 3
 
 class Employer:
     def __init__(self, name: str, surname: str, departament: str, year_start_work: int):

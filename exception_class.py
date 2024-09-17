@@ -1,4 +1,4 @@
-#Завдання 3
+#Завдання 4
 class MyException(Exception):
     def __init__(self, height: int, minheight: int, maxheight: int):
         self.height = height
