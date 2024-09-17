@@ -13,21 +13,17 @@ def multiplication(num_1: int, num_2: int):
 
 def division(num_1: int, num_2: int):
     try:
-        num_2 == 0
+        return num_1 / num_2
     except ZeroDivisionError:
         print('Sorry, but you can`t divide on zero.')
-    else:
-        return num_1 / num_2
-
+        return 'Error'
 
 def power(num_1: int, num_2: int):
     try:
-        num_1 == 0 and num_2 == '-'
-    except ValueError:
-        print('You cant power zero in negative.')
-    else:
         return num_1 ** num_2
-
+    except ZeroDivisionError:
+        print('You cant power zero in negative.')
+        return 'Error'
 
 while True:
     math_sign = input('Input math sign:')
